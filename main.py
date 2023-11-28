@@ -1,5 +1,5 @@
 import telebot
-bot = telebot.TeleBot('6286788789:AAGmaubVvm5Riigrm000RXnowwmVJQ_ZfEQ')
+bot = telebot.TeleBot('6286788789: AAGmaubVvm5Riigrm000RXn0wwmVJQ_ZfEQ')
 @bot.message_handler(commands=['start'])
 def main(message):
 	bot.send_message(message.chat.id,'Привет! \nНапиши /fact')
@@ -10,6 +10,6 @@ def main(message):
 
 @bot. message_handler (commands=['like'])
 def main(message):
-	bot.send_message(message.chat.id,'Это [ССЫЛКА](https://umschool.net/)')
+	bot.send_message(message.chat.id,'Это [ССЫЛКА](https://umschool.net/)', parse_mode='Markdown')
 
 bot. infinity_polling()
