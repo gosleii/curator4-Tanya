@@ -1,5 +1,5 @@
 import telebot
-bot = telebot.TeleBot('6286788789: AAGmaubVvm5Riigrm000RXn0wwmVJQ_ZfEQ')
+bot = telebot.TeleBot('6286788789: AAGmaubVvm5Riigrm00RXn0wwmVJQ_ZfEQ')
 @bot.message_handler(commands=['start'])
 def main(message):
 	bot.send_message(message.chat.id,'Привет! \nНапиши /fact')
